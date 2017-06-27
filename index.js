@@ -1,7 +1,11 @@
-function changeHeading() {
-    const heading =document.querySelector('h1')
-    heading.textContent = 'Ye Olde Person Stats'
+function changeDivContent(ev) {
+    ev.preventDefault()
+    const f = ev.target
+    const name = f.personName.value
+    const div = document.querySelector('#stats')
+div.innerHTML = name.fontcolor("blue").fontsize(10) 
 }
 
-const btn = document.querySelector('button')
-btn.addEventListener('click', changeHeading)
+
+const personForm = document.querySelector('#person-form')
+personForm.addEventListener('submit', changeDivContent)

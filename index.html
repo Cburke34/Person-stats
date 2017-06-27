@@ -8,8 +8,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <h1>Person Stats</h1>
-    <button>Click Me</button>
+  <h1>
+  <font face="sans-serif">Person Stats</font>
+    </h1>
+
+  </br>
+  </br>
+  </br>
+
+  <div id="stats">
+  <h2> Hello Friend! </h2>
+  </div>
+
+    <form id="person-form">
+      <p>
+        <label for="personName">Name</label>
+        <input type="text" name="personName">
+      </p>
+      <button type="submit">Go</button>
+    </form>
+
+</br>
+</br>
+</br>
+
+<h3>
+<font color="Orange">ARE YOU COOL???</font>
+</h3>
+
+<script type="text/javascript">
+    function changeText(value) {
+       document.getElementById('pText').innerHTML = " You Are " + value
+}
+</script>
+
+<p id="pText">Click on a Button</p>
+
+<input type="button" value="COOL!" id="b1" onclick="changeText(this.value);"/> 
+</br>
+</br>
+<input type="button" value="NOT COOL!" id="b2" onclick="changeText(this.value);"/> 
+
     <script src="index.js"></script>
   </body>
 </html>
