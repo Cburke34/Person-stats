@@ -6,49 +6,30 @@
     <title>Person Stats</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.0/css/foundation.min.css">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-  <h1>
-  <font face="sans-serif">Person Stats</font>
-    </h1>
-
-  </br>
-  </br>
-  </br>
-
-  <div id="stats">
-  <h2> Hello Friend! </h2>
-  </div>
+    <h1>Person Stats</h1>
 
     <form id="person-form">
       <p>
         <label for="personName">Name</label>
         <input type="text" name="personName">
       </p>
+      <p>
+        <label for="age">Age</label>
+        <input type="number" name="personAge">
+      </p>
+      <p>
+        <label for="favoriteColor">Favorite color</label>
+        <input type="color" name="favoriteColor">
+      </p>
       <button type="submit">Go</button>
     </form>
 
-</br>
-</br>
-</br>
-
-<h3>
-<font color="Orange">ARE YOU COOL???</font>
-</h3>
-
-<script type="text/javascript">
-    function changeText(value) {
-       document.getElementById('pText').innerHTML = " You Are " + value
-}
-</script>
-
-<p id="pText">Click on a Button</p>
-
-<input type="button" value="COOL!" id="b1" onclick="changeText(this.value);"/> 
-</br>
-</br>
-<input type="button" value="NOT COOL!" id="b2" onclick="changeText(this.value);"/> 
-
+    <div id="stats"></div>
+    
     <script src="index.js"></script>
   </body>
 </html>
