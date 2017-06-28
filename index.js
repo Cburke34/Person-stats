@@ -9,7 +9,7 @@ function handleSubmit(ev) {
   const list = document.createElement('ul')
   div.appendChild(list)
 
-const nameItem = renderListItem('Name', name)
+  const nameItem = renderListItem('Name', name)
 list.appendChild(nameItem)
 
 const ageItem = renderListItem('Age', age)
@@ -42,7 +42,5 @@ function renderListItem(label, value) {
       listItem.textContent = `${label}: `
       listItem.appendChild(value)
   }
- 
   return listItem
-
 }
